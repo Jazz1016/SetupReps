@@ -8,14 +8,15 @@
 import Foundation
 import CoreData
 
-final class TaskListViewModel {
-    @Published var tasks: [Task] = []
-    @Published var isShowDetailView: Bool = false
+final class TaskListViewModel: ObservableObject {
     var selectedTask: Task? {
         didSet {
             isShowDetailView = true
         }
     }
+    @Published var tasks: [Task] = []
+    @Published var completedTasks: [Task] = []
+    @Published var isShowDetailView: Bool = false
     
     lazy var fetchRequest: NSFetchRequest<Task> = {
          let request = NSFetchRequest<Task>(entityName: "Task")

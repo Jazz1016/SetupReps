@@ -8,44 +8,63 @@
 import SwiftUI
 
 struct TaskListView: View {
-    let viewModel = TaskListViewModel()
+    @StateObject private var viewModel = TaskListViewModel()
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(mockTasks) { task in
-                    let title = task.title ?? ""
-                    Text("\(title)")
-                        .swipeActions(edge: .trailing) {
-                            Button {
-                                print("done tapped")
-                            } label: {
-                                Text("Done")
-                            }
-                            .tint(.green)
-                            
-                            Button(action: {
-                                deleteTask(task: task)
-                            }) {
-                                Text("Delete")
-                            }
-                            .tint(.red)
+            VStack {
+                List {
+                    Section(header: Text("To Do")) {
+                        ForEach(mockTasks) { task in
+                            let title = task.title ?? ""
+                            Text("\(title)")
+                                .onTapGesture {
+                                    viewModel.selectedTask = task
+                                }
+                                .swipeActions(edge: .trailing) {
+                                    Button {
+                                        print("done tapped")
+                                    } label: {
+                                        Text("Done")
+                                    }
+                                    .tint(.green)
+                                    
+                                    Button(action: {
+                                        deleteTask(task: task)
+                                    }) {
+                                        Text("Delete")
+                                    }
+                                    .tint(.red)
+                                }
                         }
-                }
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "plus")
+                    }
+                    
+                    Section(header: Text("Completed")) {
+                        ForEach(viewModel.completedTasks) { task in
+                            let title = task.title ?? "Erm... What the Spruce?"
+                            Text("\(title)")
+                        }
                     }
                 }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            viewModel.isShowDetailView = true
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
+                //End of List
+                
+                }
+            .navigationTitle(Text("Test"))
+            .sheet(isPresented: $viewModel.isShowDetailView) {
+                TaskDetailView(isShowingDetail: $viewModel.isShowDetailView, task: viewModel.selectedTask)
             }
-            
-            
+            }
         }
-    }
+    //End of View
     
     func deleteTask(task: Task) {
         if let index = viewModel.tasks.firstIndex(of: task) {
