@@ -15,12 +15,12 @@ struct TaskListView: View {
             VStack {
                 List {
                     Section(header: Text("To Do")) {
-                        ForEach(mockTasks) { task in
+                        ForEach(viewModel.tasks) { task in
                             let title = task.title ?? ""
                             Text("\(title)")
-                                .onTapGesture {
-                                    viewModel.selectedTask = task
-                                }
+//                                .onTapGesture {
+//                                    viewModel.selectedTask = task
+//                                }
                                 .swipeActions(edge: .trailing) {
                                     Button {
                                         print("done tapped")
@@ -63,12 +63,16 @@ struct TaskListView: View {
                 TaskDetailView(isShowingDetail: $viewModel.isShowDetailView, task: viewModel.selectedTask)
             }
             }
+        .onAppear {
+            viewModel.fetchTasks()
+        }
         }
     //End of View
     
     func deleteTask(task: Task) {
         if let index = viewModel.tasks.firstIndex(of: task) {
             viewModel.tasks.remove(at: index)
+            viewModel.deleteTask(task: task)
         }
     }
     

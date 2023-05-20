@@ -24,13 +24,19 @@ final class TaskListViewModel: ObservableObject {
          return request
         }()
     
-    func fetchTasks() -> [Task] {
-        return (try? CoreDataStack.context.fetch(self.fetchRequest)) ?? []
+    func fetchTasks() {
+        tasks = []
+        completedTasks = []
+        let fetchedTasks = (try? CoreDataStack.context.fetch(self.fetchRequest)) ?? []
+        for task in fetchedTasks {
+            !task.isCompleted ? tasks.append(task) : completedTasks.append(task)
+        }
     }
     
-    func createTask(title: String, isCompleted: Bool) {
+    static func createTask(title: String, isCompleted: Bool) {
         let id = UUID()
-        Task(id: id, title: title, isCompleted: isCompleted)
+        let task = Task(id: id, title: title, isCompleted: isCompleted)
+//        tasks.append(task)
         CoreDataStack.saveContext()
     }
     

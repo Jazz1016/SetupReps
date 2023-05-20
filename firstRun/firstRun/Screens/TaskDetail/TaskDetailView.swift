@@ -10,11 +10,13 @@ import SwiftUI
 struct TaskDetailView: View {
     
     @Binding var isShowingDetail: Bool
+    @Binding var viewModel: TaskListViewModel
     @State var textField: String = ""
-    var task: Task?
+    @State var task: Task?
     
-    init(isShowingDetail: Binding<Bool>, task: Task? = nil) {
+    init(isShowingDetail: Binding<Bool>, task: Task? = nil, viewModel: Binding<TaskListViewModel>) {
         self.task = task
+        _viewModel = viewModel
         _isShowingDetail = isShowingDetail
         _textField = State(initialValue: task?.title ?? "")
     }
@@ -23,7 +25,9 @@ struct TaskDetailView: View {
         VStack {
             HStack {
                 Button {
-                     isShowingDetail = false
+                    self.isShowingDetail = false
+                    self.textField = ""
+                    self.task = nil
                 } label: {
                     Text("Cancel")
                         .foregroundColor(.blue)
@@ -33,7 +37,9 @@ struct TaskDetailView: View {
                 
                 Button {
                     isShowingDetail = false
-                    // save changes to task or save new task (WILL NEED ANOTHER BOOL?)
+                    if task != nil {
+                        
+                    }
                 } label: {
                     Text("Save")
                         .foregroundColor(.blue)
