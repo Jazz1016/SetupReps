@@ -10,7 +10,6 @@ import SwiftUI
 struct TaskDetailView: View {
     
     @Binding var isShowingDetail: Bool
-    @Binding var viewModel: TaskListViewModel
     @State var textField: String = ""
     @State var task: Task?
     
@@ -42,7 +41,9 @@ struct TaskDetailView: View {
                     }
                 } label: {
                     Text("Save")
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 44, height: 44)
                 }
             }
             .padding()
