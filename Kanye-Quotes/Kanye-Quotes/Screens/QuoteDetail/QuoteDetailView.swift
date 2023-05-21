@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct QuoteDetailView: View {
+    @StateObject private var viewModel: QuoteDetailViewModel
+    let onFavorite: (Quote, Bool) -> ()
     
-    @Binding var isShowDetailView: Bool
-    @Binding var quote: Quote?
-    @State var isFavoriteChanged: Bool
+    init(isShowDetailView: Binding<Bool>, quote: Binding<Quote?>, isFavoriteChanged: Bool, onFavorite: @escaping (Quote, Bool) -> ()) {
+        _viewModel = StateObject(wrappedValue: QuoteDetailViewModel(isShowDetailView: isShowDetailView, quote: quote, isFavoriteChanged: isFavoriteChanged))
+        self.onFavorite = onFavorite
+    }
     
     var body: some View {
         VStack {
             HStack {
                 Button {
-                    self.isShowDetailView = false
+                    viewModel.isShowDetailView = false
                 } label: {
                     Text("Back")
                         .foregroundColor(.blue)
@@ -27,10 +30,10 @@ struct QuoteDetailView: View {
                 Spacer()
                 
                 Button {
-                    quote?.isFavorite = true
-                    isFavoriteChanged.toggle()
+                    viewModel.toggleFavorite()
+                    onFavorite(viewModel.quote!, viewModel.isFavoriteChanged)
                 } label: {
-                    Image(systemName: isFavoriteChanged ? "heart.fill" : "heart")
+                    Image(systemName: viewModel.isFavoriteChanged ? "heart.fill" : "heart")
                         .imageScale(.large)
                         .frame(width: 44, height: 44)
                 }
@@ -39,15 +42,22 @@ struct QuoteDetailView: View {
             
             Spacer()
             
-            Text(quote?.text ?? "")
-                .font(.body)
-                .foregroundColor(.black)
-                .padding()
-            
-            Text(" -Kanye West")
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding()
-                .font(.title3)
+            VStack {
+                Text(viewModel.quote?.text ?? "")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    .padding()
+                
+                HStack {
+                    Spacer()
+                    Text("- Kanye West")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+                .padding(.trailing)
+            }
             
             Spacer()
         }

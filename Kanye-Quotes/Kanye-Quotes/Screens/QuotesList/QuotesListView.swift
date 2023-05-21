@@ -15,19 +15,12 @@ struct QuotesListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.quotes) { quote in
-                    let text = quote.text ?? ""
-                    Text("\(text)")
-                        .onTapGesture {
-                            viewModel.selectedQuote = quote
-                        }
-                        .swipeActions(edge: .trailing) {
-                            Button(action: {
-                                viewModel.deleteQuote(quote: quote)
-                            }) {
-                                Text("Delete")
-                            }
-                            .tint(.red)
-                        }
+                    QuoteListCell(quote: quote) {
+                        viewModel.deleteQuote(quote: quote)
+                    }
+                    .onTapGesture {
+                        viewModel.selectedQuote = quote
+                    }
                 }
             }
             .navigationTitle("Kanye Quotes")
@@ -41,7 +34,7 @@ struct QuotesListView: View {
                 }
             }
             .sheet(isPresented: $viewModel.isShowDetailView) {
-                QuoteDetailView(isShowDetailView: $viewModel.isShowDetailView, quote: $viewModel.selectedQuote, isFavoriteChanged: viewModel.selectedQuote!.isFavorite)
+                QuoteDetailView(isShowDetailView: $viewModel.isShowDetailView, quote: $viewModel.selectedQuote, isFavoriteChanged: viewModel.selectedQuote!.isFavorite, onFavorite: viewModel.favoriteQuote )
             }
             
         }
@@ -49,6 +42,10 @@ struct QuotesListView: View {
             viewModel.fetchQuotes()
         }
     }
+    
+    func didSelectQuote(_ quote: Quote) {
+            viewModel.selectedQuote = quote // Update the selected quote in the view model
+        }
 }
 
 struct QuotesListView_Previews: PreviewProvider {

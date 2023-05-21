@@ -45,6 +45,7 @@ class QuotesListViewModel: ObservableObject {
     func favoriteQuote(quote: Quote, isFavorite: Bool) {
         quote.isFavorite = isFavorite
         CoreDataStack.saveContext()
+        fetchQuotes()
     }
     
     func deleteQuote(quote: Quote) {
