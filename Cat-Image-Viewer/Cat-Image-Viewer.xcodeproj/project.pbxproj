@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0D5F5D442A1BFF1200D61A2C /* Cat_Image_ViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5D432A1BFF1200D61A2C /* Cat_Image_ViewerApp.swift */; };
-		0D5F5D462A1BFF1200D61A2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5D452A1BFF1200D61A2C /* ContentView.swift */; };
 		0D5F5D482A1BFF1400D61A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F5D472A1BFF1400D61A2C /* Assets.xcassets */; };
 		0D5F5D4B2A1BFF1400D61A2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5F5D4A2A1BFF1400D61A2C /* Preview Assets.xcassets */; };
+		0D5F5D522A1C026000D61A2C /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5D512A1C026000D61A2C /* Cat.swift */; };
+		0D5F5D542A1C063000D61A2C /* CatGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5D532A1C063000D61A2C /* CatGridView.swift */; };
+		0D5F5D562A1C09BD00D61A2C /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5D552A1C09BD00D61A2C /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D5F5D402A1BFF1200D61A2C /* Cat-Image-Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat-Image-Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5F5D432A1BFF1200D61A2C /* Cat_Image_ViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_Image_ViewerApp.swift; sourceTree = "<group>"; };
-		0D5F5D452A1BFF1200D61A2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D5F5D472A1BFF1400D61A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5F5D4A2A1BFF1400D61A2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D5F5D512A1C026000D61A2C /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		0D5F5D532A1C063000D61A2C /* CatGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGridView.swift; sourceTree = "<group>"; };
+		0D5F5D552A1C09BD00D61A2C /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				0D5F5D432A1BFF1200D61A2C /* Cat_Image_ViewerApp.swift */,
-				0D5F5D452A1BFF1200D61A2C /* ContentView.swift */,
 				0D5F5D472A1BFF1400D61A2C /* Assets.xcassets */,
 				0D5F5D492A1BFF1400D61A2C /* Preview Content */,
+				0D5F5D512A1C026000D61A2C /* Cat.swift */,
+				0D5F5D532A1C063000D61A2C /* CatGridView.swift */,
+				0D5F5D552A1C09BD00D61A2C /* NetworkHelper.swift */,
 			);
 			path = "Cat-Image-Viewer";
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5F5D462A1BFF1200D61A2C /* ContentView.swift in Sources */,
+				0D5F5D562A1C09BD00D61A2C /* NetworkHelper.swift in Sources */,
+				0D5F5D542A1C063000D61A2C /* CatGridView.swift in Sources */,
 				0D5F5D442A1BFF1200D61A2C /* Cat_Image_ViewerApp.swift in Sources */,
+				0D5F5D522A1C026000D61A2C /* Cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
