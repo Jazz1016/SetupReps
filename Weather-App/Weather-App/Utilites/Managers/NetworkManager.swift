@@ -15,6 +15,21 @@ final class NetworkManager {
     
     static let apiKey = Keys.apiKey
     
-
+    func fetchWeatherForecasts() async throws ->  {
+        
+    }
+    
+//    func getAppetizers() async throws -> [Appetizer] {
+//        guard let url = URL(string: NetworkManager.appetizerURL) else {
+//            throw APError.invalidURL
+//        }
+//
+//        let (data, _) = try await URLSession.shared.data(from: url)
+//            do {
+//                return try JSONDecoder().decode(AppetizerResponse.self, from: data).request
+//            } catch {
+//                throw APError.invalidData
+//        }
+//    }
     
 }
