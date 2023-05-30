@@ -8,37 +8,32 @@
 import Foundation
 
 struct WeatherResponse: Codable {
+    let list: [WeatherData]
+}
+
+struct WeatherData: Codable, Identifiable {
+    var id: String?
     let dt: TimeInterval
-    let main: Main
+    let main: MainData
     let weather: [Weather]
     let clouds: Clouds
     let wind: Wind
     let visibility: Int
     let pop: Double
     let sys: Sys
-    let dtTxt: String
-
-    private enum CodingKeys: String, CodingKey {
-        case dt, main, weather, clouds, wind, visibility, pop, sys
-        case dtTxt = "dt_txt"
-    }
+    let dt_txt: String
 }
 
-struct Main: Codable {
+struct MainData: Codable {
     let temp: Double
-    let feelsLike: Double
-    let tempMin: Double
-    let tempMax: Double
+    let feels_like: Double
+    let temp_min: Double
+    let temp_max: Double
     let pressure: Int
-    let seaLevel: Int
-    let grndLevel: Int
+    let sea_level: Int
+    let grnd_level: Int
     let humidity: Int
-    let tempKf: Double
-
-    private enum CodingKeys: String, CodingKey {
-        case temp, feelsLike, tempMin, tempMax, pressure, seaLevel, grndLevel, humidity
-        case tempKf = "temp_kf"
-    }
+    let temp_kf: Double
 }
 
 struct Weather: Codable {
