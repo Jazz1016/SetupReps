@@ -23,6 +23,9 @@
 		0D5F5DA82A25858100D61A2C /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DA72A25858100D61A2C /* CurrentWeather.swift */; };
 		0D5F5DAD2A258AF400D61A2C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DAC2A258AF400D61A2C /* EmptyState.swift */; };
 		0D5F5DB02A258F0800D61A2C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DAF2A258F0800D61A2C /* ImageLoader.swift */; };
+		0D5F5DB32A2649EF00D61A2C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DB22A2649EF00D61A2C /* LoadingView.swift */; };
+		0D5F5DB82A264C8800D61A2C /* VerticalWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DB72A264C8800D61A2C /* VerticalWeatherCell.swift */; };
+		0D5F5DBB2A265C4800D61A2C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DBA2A265C4800D61A2C /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		0D5F5DA72A25858100D61A2C /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		0D5F5DAC2A258AF400D61A2C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		0D5F5DAF2A258F0800D61A2C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		0D5F5DB22A2649EF00D61A2C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0D5F5DB72A264C8800D61A2C /* VerticalWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalWeatherCell.swift; sourceTree = "<group>"; };
+		0D5F5DBA2A265C4800D61A2C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 		0D5F5D8B2A228F6E00D61A2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D5F5DB42A264C3D00D61A2C /* Cells */,
+				0D5F5DB12A2649D100D61A2C /* UIKit Components */,
 				0D5F5DAE2A258EF600D61A2C /* Image */,
 				0D5F5DA92A258AC800D61A2C /* Empty States */,
 			);
@@ -134,6 +142,7 @@
 		0D5F5D8D2A228F8A00D61A2C /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				0D5F5DB92A265C3600D61A2C /* Extensions */,
 				0D5F5DA42A25764900D61A2C /* Helpers */,
 				0D5F5D9A2A25565F00D61A2C /* Alerts */,
 				0D5F5D8C2A228F7300D61A2C /* Managers */,
@@ -181,6 +190,30 @@
 				0D5F5DAF2A258F0800D61A2C /* ImageLoader.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		0D5F5DB12A2649D100D61A2C /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5DB22A2649EF00D61A2C /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		0D5F5DB42A264C3D00D61A2C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5DB72A264C8800D61A2C /* VerticalWeatherCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0D5F5DB92A265C3600D61A2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5DBA2A265C4800D61A2C /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +292,13 @@
 				0D5F5D9E2A25569000D61A2C /* WError.swift in Sources */,
 				0D5F5DAD2A258AF400D61A2C /* EmptyState.swift in Sources */,
 				0D5F5D8F2A228FE300D61A2C /* NetworkManager.swift in Sources */,
+				0D5F5DBB2A265C4800D61A2C /* Color+Ext.swift in Sources */,
 				0D5F5D992A22CFCC00D61A2C /* MockData.swift in Sources */,
 				0D5F5DA12A25594000D61A2C /* WeatherHomeView.swift in Sources */,
+				0D5F5DB32A2649EF00D61A2C /* LoadingView.swift in Sources */,
 				0D5F5D882A21465700D61A2C /* WeatherResponse.swift in Sources */,
 				0D5F5D7A2A213B9400D61A2C /* Weather_AppApp.swift in Sources */,
+				0D5F5DB82A264C8800D61A2C /* VerticalWeatherCell.swift in Sources */,
 				0D5F5D972A2293E500D61A2C /* Keys.swift in Sources */,
 				0D5F5DA32A25595100D61A2C /* WeatherHomeViewModel.swift in Sources */,
 				0D5F5D9C2A25567100D61A2C /* Alert.swift in Sources */,

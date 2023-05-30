@@ -13,49 +13,66 @@ struct WeatherHomeView: View {
     @State var weatherForcast: [WeatherData] = []
     @State var currentWeather: CurrentWeatherData? = nil
     @State var alertItem: AlertItem?
+    @State var isLoading = false
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                HStack {
-                    Text("Current Condition")
-                    Text("\(currentWeather?.main.temp ?? 1)")
-                    
-                    WeatherRemoteImage(urlString: currentWeather?.imageURL ?? "")
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 150, height: 150)
-                }
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(weatherForcast) { forecast in
-                            VStack {
-                                let dateStr = Helpers.formatTimeIntervalToString(from: forecast.dt)
-                                
-                                let tempFahrenheit = Helpers.kelvinToFahrenheit(forecast.main.temp)
-                                
-                                let windSpeed = Helpers.metersPerSecondToMilesPerHour(forecast.wind.speed)
-                                
-                                Text("\(dateStr)")
-                                    .padding()
-                                WeatherRemoteImage(urlString: forecast.imageURL ?? "")
+        ZStack {
+            NavigationStack {
+                VStack {
+                    if let weather = currentWeather {
+                        VStack {
+                            Text("Current Weather Condition")
+                                .font(.title)
+                            
+                            HStack {
+                                VStack {
+                                    //                                let dateStr = Helpers.formatTimeIntervalToString(from: forecast.dt)
+                                    //
+                                    //                                let tempFahrenheit = Helpers.kelvinToFahrenheit(forecast.main.temp)
+                                    //
+                                    //                                let windSpeed = Helpers.metersPerSecondToMilesPerHour(forecast.wind.speed)
+                                    
+                                    Text("\(weather.main.temp ?? 1)°F")
+                                    
+                                    Text("\(weather.weather[0].description ?? "goyim description")")
+                                    
+                                    Text("\(Helpers.kelvinToFahrenheit(weather.main.temp ?? 9))")
+                                    
+                                    Text("")
+                                }
+                                WeatherRemoteImage(urlString: currentWeather?.imageURL ?? "")
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 100, height: 100)
-                                Text("\(Int(tempFahrenheit))° F")
-                                Text("\(forecast.weather[0].main)")
-                                Text("\(forecast.weather[0].description)")
-                                Text("Humidity: \(forecast.main.humidity)")
-                                Text("Wind Speed: \(windSpeed, specifier: "%.1f") MPH")
+                                    .frame(width: 150, height: 150)
                             }
+                        }
+                    } else {
+                        LoadingView()
+                    }
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(weatherForcast) { forecast in
+                                VerticalWeatherCell(forecast: forecast)
+                            }
+                            .padding()
                         }
                     }
                 }
+                .onAppear {
+                    fetchCurrentWeather()
+                    fetchWeather()
+                }
+                .navigationTitle("😎 Weather Report")
+                .toolbarBackground(Color.brandPrimary,for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
             }
-            .onAppear {
-                fetchCurrentWeather()
-                fetchWeather()
+            
+            if isLoading {
+                LoadingView()
             }
-            .navigationTitle("😎 Weather Report")
+            
         }
+        .accentColor(Color.accentColor)
+        .background(Color.black)
     }
     
     func fetchCurrentWeather() {
@@ -79,9 +96,11 @@ struct WeatherHomeView: View {
     }
     
     func fetchWeather() {
+        isLoading = true
         Task {
             do {
                 self.weatherForcast = try await NetworkManager.shared.fetchWeatherForecasts()
+                isLoading = false
             } catch {
                 if let wError = error as? WError {
                     switch wError {
@@ -95,6 +114,7 @@ struct WeatherHomeView: View {
                         alertItem = AlertContext.unableToComplete
                     }
                 }
+                isLoading = false
             }
         }
     }

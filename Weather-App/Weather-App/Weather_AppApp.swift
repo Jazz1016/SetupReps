@@ -12,6 +12,7 @@ struct Weather_AppApp: App {
     var body: some Scene {
         WindowGroup {
             WeatherHomeView()
+                .background(Color.primary)
         }
     }
 }

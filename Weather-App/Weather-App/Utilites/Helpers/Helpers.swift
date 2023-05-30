@@ -12,7 +12,7 @@ class Helpers {
         let date = Date(timeIntervalSince1970: timeInterval)
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEE \n MMM d"
+        dateFormatter.dateFormat = "EEE MMM d"
         
         return dateFormatter.string(from: date)
     }
