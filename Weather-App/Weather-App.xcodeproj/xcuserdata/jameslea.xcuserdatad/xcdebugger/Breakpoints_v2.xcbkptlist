@@ -7,266 +7,125 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ADBA90BF-F268-49A9-9CC2-51131B9A429F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fetchWeather()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "ADBA90BF-F268-49A9-9CC2-51131B9A429F - 9de3253048f2fa55"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "ADBA90BF-F268-49A9-9CC2-51131B9A429F - 6965b9f30dbbba6d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  uuid = "ADBA90BF-F268-49A9-9CC2-51131B9A429F - 1917d45e1dd0562f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A31119E6-6B25-4F20-8790-96A195A956E1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "fetchWeather()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A31119E6-6B25-4F20-8790-96A195A956E1 - 1917d45e1dd05669"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "A31119E6-6B25-4F20-8790-96A195A956E1 - d031e29558208a4b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "A31119E6-6B25-4F20-8790-96A195A956E1 - 6c4a0a02760b1a6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "A31119E6-6B25-4F20-8790-96A195A956E1 - 591c5d15a5167874"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Weather_App.WeatherHomeView.fetchWeather() -&gt; ()"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3F584C24-44DD-4672-AA7F-6E94220AAB17"
+            uuid = "51AE415A-BACD-465E-B9F0-E49CC392C3B8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "fetchWeatherForecasts()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3F584C24-44DD-4672-AA7F-6E94220AAB17 - 22f76427e7736321"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "3F584C24-44DD-4672-AA7F-6E94220AAB17 - 22f76427e7736321"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "204">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2D7093D9-2EB1-42EE-AF61-D9253671DEF4"
+            uuid = "50E936B8-F021-4755-ACC8-6D14C363C3D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D517CE13-6B8E-45F8-8CB6-398AD683024F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "fetchWeatherForecasts()"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "fetchCurrentWeatherCondition()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44EAF31D-E072-4BA0-8C64-1B9097DB177D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "fetchCurrentWeatherCondition()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2D7093D9-2EB1-42EE-AF61-D9253671DEF4 - 2b0b2980d924302f"
+                  uuid = "44EAF31D-E072-4BA0-8C64-1B9097DB177D - 908a4d3338117a4d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "200">
                </Location>
                <Location
-                  uuid = "2D7093D9-2EB1-42EE-AF61-D9253671DEF4 - 2b0b2980d9243069"
+                  uuid = "44EAF31D-E072-4BA0-8C64-1B9097DB177D - 908a4d3338117aac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "200">
                </Location>
                <Location
-                  uuid = "2D7093D9-2EB1-42EE-AF61-D9253671DEF4 - 2b0b2980d924300e"
+                  uuid = "44EAF31D-E072-4BA0-8C64-1B9097DB177D - 908a4d3338117aac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
                   offsetFromSymbolStart = "188">
                </Location>
                <Location
-                  uuid = "2D7093D9-2EB1-42EE-AF61-D9253671DEF4 - 2b0b2980d924300e"
+                  uuid = "44EAF31D-E072-4BA0-8C64-1B9097DB177D - 908a4d3338117aac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "196">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -274,107 +133,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77"
+            uuid = "C8329E08-6715-4E29-8F19-44F7610EAE92"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "fetchWeatherForecasts()"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "fetchCurrentWeatherCondition()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 22f76427e7737d77"
+                  uuid = "C8329E08-6715-4E29-8F19-44F7610EAE92 - 908a4d3338117a20"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "444">
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1280">
                </Location>
                <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 2b0b2980d9243171"
+                  uuid = "C8329E08-6715-4E29-8F19-44F7610EAE92 - 908a4d3338117a20"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "1148">
-               </Location>
-               <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 14d9302d3c015370"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 2b0b2980d9243171"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "780">
-               </Location>
-               <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 512f732654736431"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Weather_App.WeatherResponse"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "976">
-               </Location>
-               <Location
-                  uuid = "77526A81-B32F-434F-A67F-D0A63BB98D77 - 70fdb813832d9c17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Optional&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "776">
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1580">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -382,362 +181,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D568977E-0FD5-4B44-AB1F-0D10E22AF423"
+            uuid = "1C27F285-73DD-4300-A324-87608821B5DA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "fetchWeatherForecasts()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D568977E-0FD5-4B44-AB1F-0D10E22AF423 - 22f76427e7736367"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "D568977E-0FD5-4B44-AB1F-0D10E22AF423 - 22f76427e77363a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "372">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "fetchWeatherForecasts()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015 - 22f76427e77363ca"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015 - 405984b6214e3a6c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015 - 2b0b2980d9242fcc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015 - 14d9302d3c014dcd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "A141AB88-C172-4CBD-975D-D9E0F1C9A015 - 2b0b2980d9242fcc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "15A489E6-D7B6-4C84-9F9F-ED57201C34FB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fetchWeatherForecasts()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "15A489E6-D7B6-4C84-9F9F-ED57201C34FB - 2b0b2980d92430ab"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "432">
-               </Location>
-               <Location
-                  uuid = "15A489E6-D7B6-4C84-9F9F-ED57201C34FB - 2b0b2980d924308a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "600">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchWeatherForecasts()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - 2b0b2980d92430f5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "788">
-               </Location>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - 2b0b2980d92430f5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "796">
-               </Location>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - 2b0b2980d92430f5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "380">
-               </Location>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - 512f7326547365b5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Weather_App.WeatherResponse"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "432">
-               </Location>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - 70fdb813832d9d93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Optional&lt;Weather_App.WeatherResponse&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "376">
-               </Location>
-               <Location
-                  uuid = "C8A160BF-F059-44AF-B9C0-E9D404E7A436 - f961dd4ac210842a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherData&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "396">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5CCF5B71-EF3D-4E91-9425-20E085D5F98B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "fetchWeatherForecasts()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "fetchCurrentWeatherCondition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CB3E3D1A-0E28-492D-86B9-CEF1C82A37E2"
-            shouldBeEnabled = "No"
+            uuid = "A6B15EF6-27BC-44AA-99BD-51561DD61877"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
+            filePath = "Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchWeatherForecasts()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CB3E3D1A-0E28-492D-86B9-CEF1C82A37E2 - f961dd4ac21085e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherData&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "600">
-               </Location>
-               <Location
-                  uuid = "CB3E3D1A-0E28-492D-86B9-CEF1C82A37E2 - f961dd4ac21085e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchWeatherForecasts() async throws -&gt; Swift.Array&lt;Weather_App.WeatherData&gt;"
-                  moduleName = "Weather-App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "380">
-               </Location>
-            </Locations>
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1DBD59C-CB9D-4325-882D-5C3A393A111A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-App/Views/Image/ImageLoader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

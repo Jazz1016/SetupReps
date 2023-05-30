@@ -13,10 +13,9 @@ struct Coord: Codable {
 }
 
 struct CurrentWeatherData: Codable {
-    let coord: Coord
+    var imageURL: String?
     let weather: [Weather]
-    let base: String
-    let main: MainData
+    let main: CurrentMain
     let visibility: Int
     let wind: Wind
     let clouds: Clouds
@@ -26,6 +25,11 @@ struct CurrentWeatherData: Codable {
     let id: Int
     let name: String
     let cod: Int
+}
+
+struct CurrentMain: Codable {
+    let temp: Double
+    let humidity: Int
 }
 
 struct CurrentSys: Codable {

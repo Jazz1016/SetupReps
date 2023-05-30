@@ -5,48 +5,84 @@
 //  Created by James Lea on 5/27/23.
 //
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    
+    private let cache = NSCache<NSString, UIImage>()
     static let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
-    
     static let apiKey = Keys.apiKey
     
     func fetchWeatherForecasts() async throws -> [WeatherData] {
-
+        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Orem&appid=\(Keys.apiKey)")
         else {
-            
-            
             throw WError.invalidURL
         }
         
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
-//        print("Response Data:", data)
-//        print("Response:", response)
+        let (data, _) = try await URLSession.shared.data(from: url)
         
         do {
             let decodedData = try JSONDecoder().decode(WeatherResponse.self, from: data)
-//            print("decoded data: ", decodedData)
             let weatherData = decodedData.list
-            var filteredWeatherData = filterForNoonWeatherData(weatherData)
-            let finalWeawtherData = filteredWeatherData.map { weatherData in
+            let filteredWeatherData = filterForNoonWeatherData(weatherData)
+            let finalWeatherData = filteredWeatherData.map { weatherData in
                 let randomInt = Int.random(in: 1..<100000000)
                 var mockWeatherData = weatherData
+                let imageURL = "https://openweathermap.org/img/wn/\(weatherData.weather[0].icon)@2x.png"
                 mockWeatherData.id = "\(randomInt)"
+                mockWeatherData.imageURL = imageURL
                 return mockWeatherData
             }
-            return finalWeawtherData
+            return finalWeatherData
         } catch {
             throw WError.invalidData
         }
     }
     
-    func getCurrentWeatherCondition() {
+    func fetchCurrentWeatherCondition() async throws -> CurrentWeatherData {
+        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Orem&appid=\(Keys.apiKey)")
+        else {
+            throw WError.invalidURL
+        }
         
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        do {
+            let decodedData = try JSONDecoder().decode(CurrentWeatherData.self, from: data)
+            var tempWeather = decodedData
+            let imageURL = "https://openweathermap.org/img/wn/\(tempWeather.weather[0].icon)@2x.png"
+            tempWeather.imageURL = imageURL
+            return tempWeather
+        } catch {
+            throw WError.invalidData
+        }
+    }
+    
+    func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data, let image = UIImage(data: data) else {
+                completed(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completed(image)
+        }
+        task.resume()
     }
     
     func filterForNoonWeatherData(_ weatherData: [WeatherData]) -> [WeatherData] {
@@ -60,23 +96,5 @@ final class NetworkManager {
         }
         return noonWeatherData
     }
-
-
-
-
-//    api.openweathermap.org/data/2.5/forecast?lat=40.2338&lon=111.6585&appid=68f5cc68f53d8f2c381f41f100ab3b1b
-    
-//    func getAppetizers() async throws -> [Appetizer] {
-//        guard let url = URL(string: NetworkManager.appetizerURL) else {
-//            throw APError.invalidURL
-//        }
-//
-//        let (data, _) = try await URLSession.shared.data(from: url)
-//            do {
-//                return try JSONDecoder().decode(AppetizerResponse.self, from: data).request
-//            } catch {
-//                throw APError.invalidData
-//        }
-//    }
     
 }
