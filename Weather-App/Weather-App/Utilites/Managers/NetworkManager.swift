@@ -16,7 +16,7 @@ final class NetworkManager {
     static let apiKey = Keys.apiKey
     
     func fetchWeatherForecasts() async throws -> [WeatherData] {
-//        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Orem&appid=68f5cc68f53d8f2c381f41f100ab3b1b")
+
         else {
             
             
