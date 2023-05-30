@@ -159,6 +159,36 @@
                   endingLineNumber = "57"
                   offsetFromSymbolStart = "1580">
                </Location>
+               <Location
+                  uuid = "C8329E08-6715-4E29-8F19-44F7610EAE92 - 908a4d3338117a20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
+                  moduleName = "Weather-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "C8329E08-6715-4E29-8F19-44F7610EAE92 - 908a4d3338117a20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
+                  moduleName = "Weather-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1376">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -176,6 +206,38 @@
             endingLineNumber = "56"
             landmarkName = "fetchCurrentWeatherCondition()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C27F285-73DD-4300-A324-87608821B5DA - 908a4d3338117a0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
+                  moduleName = "Weather-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+               <Location
+                  uuid = "1C27F285-73DD-4300-A324-87608821B5DA - 908a4d3338117a0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
+                  moduleName = "Weather-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1092">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -197,62 +259,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FFE296C4-CC7D-44EC-9E2C-4B3437B2C4BC"
-            shouldBeEnabled = "Yes"
+            uuid = "9E2AEE70-A71A-40C7-B677-16964030A36B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
+            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchCurrentWeatherCondition()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FFE296C4-CC7D-44EC-9E2C-4B3437B2C4BC - 5f39930ea4d17a33"
+                  uuid = "9E2AEE70-A71A-40C7-B677-16964030A36B - 908a4d3338117a6e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Weather_App.WeatherHomeView.body.getter : some"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "372">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "708">
                </Location>
                <Location
-                  uuid = "FFE296C4-CC7D-44EC-9E2C-4B3437B2C4BC - c63c5d78a9d90212"
+                  uuid = "9E2AEE70-A71A-40C7-B677-16964030A36B - 908a4d3338117a6e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;, Weather_App.LoadingView&gt;, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbarBackground(_: SwiftUI.Visibility, for: SwiftUI.ToolbarPlacement...) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, &lt;&lt;opaque return type of SwiftUI.View.toolbarBackground(_: SwiftUI.Visibility, for: SwiftUI.ToolbarPlacement...) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;Weather_App.LoadingView&gt;)&gt; in Weather_App.WeatherHomeView.body.getter : some"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "984">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "668">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "207D6A7E-2C49-4519-A9DD-BC8381DD5A01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-App/Utilites/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "fetchCurrentWeatherCondition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "207D6A7E-2C49-4519-A9DD-BC8381DD5A01 - 908a4d3338117a4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
+                  moduleName = "Weather-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "528">
                </Location>
                <Location
-                  uuid = "FFE296C4-CC7D-44EC-9E2C-4B3437B2C4BC - 61342e2b029bb644"
+                  uuid = "207D6A7E-2C49-4519-A9DD-BC8381DD5A01 - 908a4d3338117a4d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;, Weather_App.LoadingView&gt;, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbarBackground(_: SwiftUI.Visibility, for: SwiftUI.ToolbarPlacement...) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, &lt;&lt;opaque return type of SwiftUI.View.toolbarBackground(_: SwiftUI.Visibility, for: SwiftUI.ToolbarPlacement...) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;Weather_App.LoadingView&gt;)&gt; in Weather_App.WeatherHomeView.body.getter : some"
+                  symbolName = "(3) suspend resume partial function for Weather_App.NetworkManager.fetchCurrentWeatherCondition() async throws -&gt; Weather_App.CurrentWeatherData"
                   moduleName = "Weather-App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Screens/WeatherHome/WeatherHomeView.swift"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/SetupReps/Weather-App/Weather-App/Utilites/Managers/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "568">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "504">
                </Location>
             </Locations>
          </BreakpointContent>

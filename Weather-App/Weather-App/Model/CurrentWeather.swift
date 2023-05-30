@@ -20,11 +20,11 @@ struct CurrentWeatherData: Codable {
     let wind: Wind
     let clouds: Clouds
     let dt: TimeInterval
-    let sys: CurrentSys
+//    let sys: CurrentSys
     let timezone: Int
     let id: Int
     let name: String
-    let cod: Int
+//    let cod: Int
 }
 
 struct CurrentMain: Codable {

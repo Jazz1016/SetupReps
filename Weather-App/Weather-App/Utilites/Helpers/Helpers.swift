@@ -17,6 +17,15 @@ class Helpers {
         return dateFormatter.string(from: date)
     }
     
+    static func formatCurrentTimeIntervalToString(from timeInterval: TimeInterval) -> String {
+        let date = Date(timeIntervalSince1970: timeInterval)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d"
+        
+        return dateFormatter.string(from: date)
+    }
+    
     static func kelvinToFahrenheit(_ temperature: Double) -> Double {
         let fahrenheit = (temperature - 273.15) * 9/5 + 32
         return fahrenheit

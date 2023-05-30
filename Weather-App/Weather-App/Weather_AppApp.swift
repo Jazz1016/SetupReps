@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct Weather_AppApp: App {
+    var selectedCity = SelectedCity()
+    
     var body: some Scene {
         WindowGroup {
             WeatherHomeView()
-                .background(Color.primary)
+                .environmentObject(selectedCity)
         }
     }
 }
