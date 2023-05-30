@@ -20,6 +20,7 @@
 		0D5F5DA12A25594000D61A2C /* WeatherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DA02A25594000D61A2C /* WeatherHomeView.swift */; };
 		0D5F5DA32A25595100D61A2C /* WeatherHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DA22A25595100D61A2C /* WeatherHomeViewModel.swift */; };
 		0D5F5DA62A25765B00D61A2C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DA52A25765B00D61A2C /* Helpers.swift */; };
+		0D5F5DA82A25858100D61A2C /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DA72A25858100D61A2C /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0D5F5DA02A25594000D61A2C /* WeatherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeView.swift; sourceTree = "<group>"; };
 		0D5F5DA22A25595100D61A2C /* WeatherHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeViewModel.swift; sourceTree = "<group>"; };
 		0D5F5DA52A25765B00D61A2C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0D5F5DA72A25858100D61A2C /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				0D5F5D872A21465700D61A2C /* WeatherResponse.swift */,
 				0D5F5D982A22CFCC00D61A2C /* MockData.swift */,
+				0D5F5DA72A25858100D61A2C /* CurrentWeather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5F5DA62A25765B00D61A2C /* Helpers.swift in Sources */,
+				0D5F5DA82A25858100D61A2C /* CurrentWeather.swift in Sources */,
 				0D5F5D9E2A25569000D61A2C /* WError.swift in Sources */,
 				0D5F5D8F2A228FE300D61A2C /* NetworkManager.swift in Sources */,
 				0D5F5D992A22CFCC00D61A2C /* MockData.swift in Sources */,

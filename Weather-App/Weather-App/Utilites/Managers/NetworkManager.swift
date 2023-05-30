@@ -16,7 +16,7 @@ final class NetworkManager {
     static let apiKey = Keys.apiKey
     
     func fetchWeatherForecasts() async throws -> [WeatherData] {
-        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Orem&appid=68f5cc68f53d8f2c381f41f100ab3b1b")
+//        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Orem&appid=68f5cc68f53d8f2c381f41f100ab3b1b")
         else {
             
             
@@ -44,18 +44,10 @@ final class NetworkManager {
             throw WError.invalidData
         }
     }
-//
-//    func filterForNoonWeatherData(_ weatherData: [WeatherData]) -> [WeatherData] {
-//        let calendar = Calendar.current
-//
-//        let noonWeatherData = weatherData.filter { data in
-//            let date = Date(timeIntervalSince1970: data.dt)
-//            let components = calendar.dateComponents([.hour, .minute], from: date)
-//            return components.hour == 12 && components.minute == 0
-//        }
-//
-//        return noonWeatherData
-//    }
+    
+    func getCurrentWeatherCondition() {
+        
+    }
     
     func filterForNoonWeatherData(_ weatherData: [WeatherData]) -> [WeatherData] {
         let calendar = Calendar.current

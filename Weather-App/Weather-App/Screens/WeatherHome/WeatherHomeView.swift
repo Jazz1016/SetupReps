@@ -22,6 +22,7 @@ struct WeatherHomeView: View {
                         Text("\(dateStr)")
                             .padding()
                         Text("\(Int(forecast.main.temp))")
+                        Text("\(forecast.weather[0].main)")
                         Text("\(forecast.weather[0].description)")
                     }
                 }
