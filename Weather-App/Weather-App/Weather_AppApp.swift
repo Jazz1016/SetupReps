@@ -13,7 +13,7 @@ struct Weather_AppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            WeatherHomeView()
+            OnboardingView()
                 .environmentObject(selectedCity)
         }
     }

@@ -31,8 +31,7 @@ struct WeatherHomeView: View {
                     }
                 }
                 .onAppear {
-                    viewModel.fetchCurrentWeather()
-                    viewModel.fetchWeather()
+                    viewModel.fetchInOrder()
                 }
                 .toolbar {
                     ToolbarItem(placement: .principal) {
@@ -51,7 +50,7 @@ struct WeatherHomeView: View {
                 .toolbarBackground(Color.brandPrimary,for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .fullScreenCover(isPresented: $viewModel.isShowingSettings ) {
-                            SettingsView()
+                    SettingsView(isShowingSettings: $viewModel.isShowingSettings)
                 }
                 if viewModel.isLoading {
                     LoadingView()

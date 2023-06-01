@@ -8,20 +8,27 @@
 import SwiftUI
 
 final class SettingsViewModel: ObservableObject {
-    @AppStorage("city") private var cityData: Data?
-    @Published var selectedCity = City(id: 0, name: "Cupertino")
+    @AppStorage("userCity") private var userCity: Data?
+    @Published var selectedCity: City = City(id: 1, name: "New York")
     
-    func saveChanges(city: City) {
-        
-        do {
-            let data = try JSONEncoder().encode(city)
-            userData = data
-            alertItem = AlertContext.userSaveSuccess
-            return
-        } catch {
-            alertItem = AlertContext.invalidUserData
-            return
+    func saveCity() {
+            do {
+                let data = try JSONEncoder().encode(selectedCity)
+                userCity = data
+            } catch {
+                print(error)
+            }
         }
-    }
+        
+        func retrieveCity() {
+            guard let userCity = userCity else { return }
+            
+            do {
+                let decodedCity = try JSONDecoder().decode(City.self, from: userCity)
+                selectedCity = decodedCity
+            } catch {
+                print(error)
+            }
+        }
     
 }

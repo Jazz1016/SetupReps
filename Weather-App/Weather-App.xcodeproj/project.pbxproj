@@ -30,6 +30,9 @@
 		0D5F5DC12A268A9800D61A2C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DC02A268A9800D61A2C /* SettingsView.swift */; };
 		0D5F5DC32A268AA500D61A2C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DC22A268AA500D61A2C /* SettingsViewModel.swift */; };
 		0D5F5DC52A268B5B00D61A2C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5DC42A268B5B00D61A2C /* City.swift */; };
+		0D5F5E0F2A28135300D61A2C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5E0E2A28135300D61A2C /* OnboardingView.swift */; };
+		0D5F5E122A28153300D61A2C /* CityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5E112A28153300D61A2C /* CityPicker.swift */; };
+		0D5F5E152A282C1000D61A2C /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5E142A282C1000D61A2C /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		0D5F5DC02A268A9800D61A2C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0D5F5DC22A268AA500D61A2C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		0D5F5DC42A268B5B00D61A2C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		0D5F5E0E2A28135300D61A2C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0D5F5E112A28153300D61A2C /* CityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPicker.swift; sourceTree = "<group>"; };
+		0D5F5E142A282C1000D61A2C /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		0D5F5D8A2A228F6600D61A2C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0D5F5E0D2A28129800D61A2C /* Onboarding */,
 				0D5F5DBF2A268A8000D61A2C /* Settings */,
 				0D5F5D9F2A25591E00D61A2C /* WeatherHome */,
 			);
@@ -133,6 +140,8 @@
 		0D5F5D8B2A228F6E00D61A2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D5F5E132A282C0300D61A2C /* Buttons */,
+				0D5F5E102A2814F500D61A2C /* Picker */,
 				0D5F5DBC2A26731F00D61A2C /* View */,
 				0D5F5DB42A264C3D00D61A2C /* Cells */,
 				0D5F5DB12A2649D100D61A2C /* UIKit Components */,
@@ -244,6 +253,30 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		0D5F5E0D2A28129800D61A2C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5E0E2A28135300D61A2C /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0D5F5E102A2814F500D61A2C /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5E112A28153300D61A2C /* CityPicker.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		0D5F5E132A282C0300D61A2C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0D5F5E142A282C1000D61A2C /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,14 +349,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5F5DA62A25765B00D61A2C /* Helpers.swift in Sources */,
+				0D5F5E152A282C1000D61A2C /* XDismissButton.swift in Sources */,
 				0D5F5DA82A25858100D61A2C /* CurrentWeather.swift in Sources */,
 				0D5F5D9E2A25569000D61A2C /* WError.swift in Sources */,
 				0D5F5DC12A268A9800D61A2C /* SettingsView.swift in Sources */,
 				0D5F5DAD2A258AF400D61A2C /* EmptyState.swift in Sources */,
 				0D5F5DC32A268AA500D61A2C /* SettingsViewModel.swift in Sources */,
+				0D5F5E0F2A28135300D61A2C /* OnboardingView.swift in Sources */,
 				0D5F5DC52A268B5B00D61A2C /* City.swift in Sources */,
 				0D5F5D8F2A228FE300D61A2C /* NetworkManager.swift in Sources */,
 				0D5F5DBB2A265C4800D61A2C /* Color+Ext.swift in Sources */,
+				0D5F5E122A28153300D61A2C /* CityPicker.swift in Sources */,
 				0D5F5D992A22CFCC00D61A2C /* MockData.swift in Sources */,
 				0D5F5DA12A25594000D61A2C /* WeatherHomeView.swift in Sources */,
 				0D5F5DB32A2649EF00D61A2C /* LoadingView.swift in Sources */,

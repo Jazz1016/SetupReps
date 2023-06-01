@@ -14,8 +14,8 @@ final class NetworkManager {
     static let baseURL = "https://api.openweathermap.org/data/2.5/forecast"
     static let apiKey = Keys.apiKey
     
-    func fetchWeatherForecasts() async throws -> [WeatherData] {
-        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Orem&appid=\(Keys.apiKey)")
+    func fetchWeatherForecasts(city: String) async throws -> [WeatherData] {
+        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=\(city)&appid=\(Keys.apiKey)")
         else {
             throw WError.invalidURL
         }
@@ -40,8 +40,8 @@ final class NetworkManager {
         }
     }
     
-    func fetchCurrentWeatherCondition() async throws -> CurrentWeatherData {
-        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Orem&appid=\(Keys.apiKey)")
+    func fetchCurrentWeatherCondition(city: String) async throws -> CurrentWeatherData {
+        guard let url =  URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(Keys.apiKey)")
         else {
             throw WError.invalidURL
         }

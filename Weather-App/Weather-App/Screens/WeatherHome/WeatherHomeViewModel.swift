@@ -5,10 +5,11 @@
 //  Created by James Lea on 5/29/23.
 //
 
-import Foundation
+import SwiftUI
 
 final class WeatherHomeViewModel: ObservableObject {
-    
+    @AppStorage("userCity") private var userCity: Data?
+    @Published var selectedCity: City?
     @Published var weatherForcast: [WeatherData] = []
     @Published var currentWeather: CurrentWeatherData? = nil
     @Published var alertItem: AlertItem?
@@ -16,10 +17,38 @@ final class WeatherHomeViewModel: ObservableObject {
     @Published var isShowingSettings = false
     @Published var city: City?
     
+    func retrieveCity(completion: @escaping (Result<City, WError>) -> Void) {
+        guard let userCity = userCity else { return }
+        
+        do {
+            let decodedCity = try JSONDecoder().decode(City.self, from: userCity)
+            selectedCity = decodedCity
+            completion(.success(decodedCity))
+        } catch {
+            completion(.failure(error as! WError))
+        }
+    }
+    
+    func fetchInOrder() {
+        isLoading = true
+        retrieveCity() { result in
+            switch result {
+            case .success(let city):
+                self.selectedCity = city
+                self.fetchCurrentWeather()
+                self.fetchWeather()
+            case .failure(let error):
+                print(error)
+                self.isLoading = false
+            }
+        }
+    }
+    
     func fetchCurrentWeather() {
+        guard let selectedCity else { return }
         Task {
             do {
-                let currentWeather = try await NetworkManager.shared.fetchCurrentWeatherCondition()
+                let currentWeather = try await NetworkManager.shared.fetchCurrentWeatherCondition(city: selectedCity.name)
                 
                 DispatchQueue.main.async {
                     self.currentWeather = currentWeather
@@ -32,10 +61,10 @@ final class WeatherHomeViewModel: ObservableObject {
     }
     
     func fetchWeather() {
-        isLoading = true
+        guard let selectedCity else { return }
         Task {
             do {
-                let weatherForecast = try await NetworkManager.shared.fetchWeatherForecasts()
+                let weatherForecast = try await NetworkManager.shared.fetchWeatherForecasts(city: selectedCity.name)
                 
                 DispatchQueue.main.async {
                     self.weatherForcast = weatherForecast
