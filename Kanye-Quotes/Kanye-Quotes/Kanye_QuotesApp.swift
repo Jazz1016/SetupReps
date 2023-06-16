@@ -12,7 +12,7 @@ struct Kanye_QuotesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            QuotesListView()
+            ParentView()
         }
     }
 }

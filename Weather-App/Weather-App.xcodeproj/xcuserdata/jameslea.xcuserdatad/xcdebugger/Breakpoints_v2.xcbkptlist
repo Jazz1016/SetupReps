@@ -365,7 +365,7 @@
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "fetchInOrder()"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "18772EEB-C9AE-4211-B7BA-C95856497836 - 55ab68bbcca4cadc"
@@ -428,7 +428,7 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "retrieveCity(completion:)"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "73359CAA-88DF-4D06-9964-930583B86544 - 2296664aad394271"
@@ -476,7 +476,7 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "fetchCurrentWeather()"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "D129B1D2-D739-4D01-87EB-23C45553D0A6 - b650a891b4ab8aea"
@@ -554,7 +554,7 @@
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "fetchWeather()"
-            landmarkType = "9">
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "9894BC06-71DC-461F-BF9F-816B44FED707 - c8550d34a40163e0"

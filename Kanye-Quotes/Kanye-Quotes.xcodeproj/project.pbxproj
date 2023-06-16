@@ -20,6 +20,7 @@
 		0D5F5CCF2A1A804600D61A2C /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5CCE2A1A804600D61A2C /* QuoteDetailView.swift */; };
 		0D5F5CD12A1A941000D61A2C /* QuoteDetailModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5CD02A1A941000D61A2C /* QuoteDetailModelView.swift */; };
 		0D5F5CD72A1A95D600D61A2C /* QuoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F5CD62A1A95D600D61A2C /* QuoteListCell.swift */; };
+		0DE1EA2A2A3BD20200D5FE42 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1EA292A3BD20200D5FE42 /* ParentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0D5F5CCE2A1A804600D61A2C /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
 		0D5F5CD02A1A941000D61A2C /* QuoteDetailModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailModelView.swift; sourceTree = "<group>"; };
 		0D5F5CD62A1A95D600D61A2C /* QuoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListCell.swift; sourceTree = "<group>"; };
+		0DE1EA292A3BD20200D5FE42 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				0D5F5CCD2A1A803300D61A2C /* QuoteDetail */,
 				0D5F5CBB2A195C6100D61A2C /* QuotesList */,
+				0DE1EA292A3BD20200D5FE42 /* ParentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				0D5F5CCF2A1A804600D61A2C /* QuoteDetailView.swift in Sources */,
 				0D5F5CC32A19738800D61A2C /* QuotesListView.swift in Sources */,
 				0D5F5CB22A195BE600D61A2C /* Persistence.swift in Sources */,
+				0DE1EA2A2A3BD20200D5FE42 /* ParentView.swift in Sources */,
 				0D5F5CB52A195BE600D61A2C /* Kanye_Quotes.xcdatamodeld in Sources */,
 				0D5F5CC12A19722E00D61A2C /* CoreDataStack.swift in Sources */,
 				0D5F5CCC2A1A737D00D61A2C /* kanyeQuotes.swift in Sources */,
