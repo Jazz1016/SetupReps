@@ -1,49 +1,115 @@
+//import SwiftUI
+//
+//class ParentViewModel: ObservableObject {
+//    @Published var nestedObject: NestedObject
+//
+//    init() {
+//        self.nestedObject = NestedObject()
+//    }
+//}
+//
+//class NestedObject {
+//    var value: Int = 0
+//    var anotherValue: String = ""
+//}
+//
+//struct ParentView: View {
+//    @StateObject private var parentViewModel = ParentViewModel()
+//
+//    var body: some View {
+//        VStack {
+//            Text("Nested Object Value: \(parentViewModel.nestedObject.value)")
+//            Text("Nested Object Another Value: \(parentViewModel.nestedObject.anotherValue)")
+//
+//            ChildView(viewModel: ChildViewModel(value: $parentViewModel.nestedObject.value, anotherValue: $parentViewModel.nestedObject.anotherValue))
+//                .padding()
+//        }
+//    }
+//}
+//
+//class ChildViewModel: ObservableObject {
+//    @Binding var value: Int
+//    @Binding var anotherValue: String
+//
+//    init(value: Binding<Int>, anotherValue: Binding<String>) {
+//        self._value = value
+//        self._anotherValue = anotherValue
+//    }
+//}
+//
+//struct ChildView: View {
+//    @ObservedObject var viewModel: ChildViewModel
+//
+//    var body: some View {
+//        VStack {
+//            Text("Nested Object Value: \(viewModel.value)")
+//            Text("Nested Object Another Value: \(viewModel.anotherValue)")
+//
+//            Button("Increment Value") {
+//                viewModel.value += 1
+//            }
+//
+//            Button("Change Another Value") {
+//                viewModel.anotherValue = "New Value"
+//            }
+//        }
+//    }
+//}
+//
+//struct ParentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ParentView()
+//    }
+//}
+
+
 import SwiftUI
 
-class ParentViewModel: ObservableObject {
-    @Published var nestedObject: NestedObject
+class UserData: ObservableObject {
+    @Published var name: String = "John Doe"
+}
+
+class ChildViewModel: ObservableObject {
+    @EnvironmentObject var userData: UserData
     
-    init() {
-        self.nestedObject = NestedObject()
+    // Use the userData property in your view model
+    func doSomething() {
+        print(userData.name)
     }
 }
 
-class NestedObject: ObservableObject {
-    @Published var value: Int = 0
-    @Published var anotherValue: String = ""
-}
-
 struct ParentView: View {
-    @StateObject private var parentViewModel = ParentViewModel()
-
+    @StateObject private var userData = UserData()
+    
     var body: some View {
         VStack {
-            Text("Nested Object Value: \(parentViewModel.nestedObject.value)")
-            Text("Nested Object Another Value: \(parentViewModel.nestedObject.anotherValue)")
-            
-            ChildView(value: $parentViewModel.nestedObject.value,
-                      anotherValue: $parentViewModel.nestedObject.anotherValue)
+            Text(userData.name)
                 .padding()
+            
+            ChildView()
+                .environmentObject(userData) // Inject the environment object
+            
+            Button("Change Name") {
+                userData.name = "Jane Smith" // Update the environment object
+            }
+            .padding()
         }
     }
 }
 
 struct ChildView: View {
-    @Binding var value: Int
-    @Binding var anotherValue: String
+    @EnvironmentObject var userData: UserData
+    @StateObject private var childViewModel = ChildViewModel()
     
     var body: some View {
         VStack {
-            Text("Nested Object Value: \(value)")
-            Text("Nested Object Another Value: \(anotherValue)")
+            Text(childViewModel.userData.name)
+                .padding()
             
-            Button("Increment Value") {
-                value += 1
+            Button("Do Something") {
+                childViewModel.doSomething() // Access the environment object in the child view's view model
             }
-            
-            Button("Change Another Value") {
-                anotherValue = "New Value"
-            }
+            .padding()
         }
     }
 }
