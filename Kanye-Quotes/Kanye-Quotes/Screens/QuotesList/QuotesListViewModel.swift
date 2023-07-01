@@ -9,12 +9,12 @@ import Foundation
 import CoreData
 
 class QuotesListViewModel: ObservableObject {
-    
-    @Published var selectedQuote: Quote? {
-        didSet {
-            isShowDetailView = true
-        }
-    }
+//
+//    @Published var selectedQuote: Quote? {
+//        didSet {
+//            isShowDetailView = true
+//        }
+//    }
     @Published var quotes: [Quote] = []
     @Published var isShowDetailView: Bool = false
     
