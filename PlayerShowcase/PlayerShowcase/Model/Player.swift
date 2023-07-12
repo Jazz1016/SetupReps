@@ -32,7 +32,7 @@ class MockData {
         Player(firstName: "Kelly", lastName: "Olynyk", position: "C", height: "6'11\"", weight: "240 lbs", jerseyNumber: "41", image: "olynyk"),
         Player(firstName: "Talen", lastName: "Horton-Tucker", position: "PG", height: "6'4\"", weight: "234 lbs", jerseyNumber: "5", image: "horton"),
         Player(firstName: "Jordan", lastName: "Clarkson", position: "SG", height: "6'4\"", weight: "195 lbs", jerseyNumber: "00", image: "clarkson"),
-        Player(firstName: "Taylor", lastName: "Hendricks", position: "PF", height: "6'9\"", weight: "210 lbs", jerseyNumber: "0", image: "hendricks"),
+        Player(firstName: "Taylor", lastName: "Hendricks", position: "PF", height: "6'9\"", weight: "210 lbs", jerseyNumber: "0", image: "playerNotFound"),
         Player(firstName: "Ochai", lastName: "Agbaji", position: "SG", height: "6'5\"", weight: "215 lbs", jerseyNumber: "30", image: "agbaji"),
         Player(firstName: "Keyonte", lastName: "George", position: "PG", height: "6'4\"", weight: "185 lbs", jerseyNumber: "3", image: "playerNotFound"),
         Player(firstName: "Simone", lastName: "Fontecchio", position: "SF", height: "6'8\"", weight: "209 lbs", jerseyNumber: "16", image: "fontecchio"),

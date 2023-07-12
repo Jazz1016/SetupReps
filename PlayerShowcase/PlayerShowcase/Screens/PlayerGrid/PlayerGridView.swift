@@ -25,6 +25,8 @@ struct PlayerGridView: View {
                                 .resizable()
                                 .frame(width: 40, height: 50)
                             Text(player.lastName)
+                            Text(player.height)
+                            Text(player.weight)
                         }
                     }
                 }
