@@ -11,7 +11,7 @@ import SwiftUI
 struct PlayerShowcaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerGridView()
         }
     }
 }
