@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct PlayerDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    let selectedPlayer: Player
+    
+//    var body: some View {
+//        VStack {
+//            Text(selectedPlayer.firstName)
+//            Text(selectedPlayer.lastName)
+//        }
+//    }
 }
 
 struct PlayerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerDetailView()
+        PlayerDetailView(selectedPlayer: MockData.jazzPlayers.first!)
     }
 }

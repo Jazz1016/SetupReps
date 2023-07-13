@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PlayerGridView: View {
+    var isPlayerDetailShown = false
+    var selectedPlayer: Player?
     
     let gridColumns = [
             GridItem(.flexible()),
@@ -16,22 +18,30 @@ struct PlayerGridView: View {
         ]
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                LazyVGrid(columns: gridColumns) {
-                    ForEach(MockData.jazzPlayers, id: \.self) { player in
-                        VStack {
-                            Image(player.image)
-                                .resizable()
-                                .frame(width: 40, height: 50)
-                            Text(player.lastName)
-                            Text(player.height)
-                            Text(player.weight)
+        ZStack {
+            NavigationStack {
+                ScrollView {
+                    LazyVGrid(columns: gridColumns) {
+                        ForEach(MockData.jazzPlayers, id: \.self) { player in
+                            VStack {
+                                Image(player.image)
+                                    .resizable()
+                                    .frame(width: 40, height: 50)
+                                Text(player.lastName)
+                                Text(player.height)
+                                Text(player.weight)
+                            }
                         }
                     }
                 }
+                .navigationTitle("Jazz Players")
             }
-            .navigationTitle("Jazz Players")
+            
+            if isPlayerDetailShown {
+                PlayerDetailView(selectedPlayer: selectedPlayer!)
+            }
+            
+            
         }
     }
 }
