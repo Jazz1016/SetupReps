@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PlayerGridView: View {
-    var isPlayerDetailShown = false
-    var selectedPlayer: Player?
+    @State var isPlayerDetailShown = false
+    @State var selectedPlayer: Player?
     
     let gridColumns = [
             GridItem(.flexible()),
@@ -30,6 +30,9 @@ struct PlayerGridView: View {
                                 Text(player.lastName)
                                 Text(player.height)
                                 Text(player.weight)
+                            }
+                            .onTapGesture {
+                                isPlayerDetailShown = true
                             }
                         }
                     }

@@ -10,12 +10,12 @@ import SwiftUI
 struct PlayerDetailView: View {
     let selectedPlayer: Player
     
-//    var body: some View {
-//        VStack {
-//            Text(selectedPlayer.firstName)
-//            Text(selectedPlayer.lastName)
-//        }
-//    }
+    var body: some View {
+        VStack {
+            Text(selectedPlayer.firstName)
+            Text(selectedPlayer.lastName)
+        }
+    }
 }
 
 struct PlayerDetailView_Previews: PreviewProvider {
