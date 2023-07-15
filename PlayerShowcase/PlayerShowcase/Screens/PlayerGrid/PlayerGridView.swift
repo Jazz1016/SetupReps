@@ -23,14 +23,7 @@ struct PlayerGridView: View {
                 ScrollView {
                     LazyVGrid(columns: gridColumns) {
                         ForEach(MockData.jazzPlayers, id: \.self) { player in
-                            VStack {
-                                Image(player.image)
-                                    .resizable()
-                                    .frame(width: 40, height: 50)
-                                Text(player.lastName)
-                                Text(player.height)
-                                Text(player.weight)
-                            }
+                            PlayerGridCell(player: player)
                             .onTapGesture {
                                 isPlayerDetailShown = true
                             }
