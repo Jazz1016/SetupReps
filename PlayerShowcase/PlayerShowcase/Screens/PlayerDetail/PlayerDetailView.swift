@@ -12,8 +12,8 @@ struct PlayerDetailView: View {
     
     var body: some View {
         VStack {
-//            Text(selectedPlayer.firstName)
-//            Text(selectedPlayer.lastName)
+            Text(selectedPlayer.firstName)
+            Text(selectedPlayer.lastName)
         }
     }
 }
