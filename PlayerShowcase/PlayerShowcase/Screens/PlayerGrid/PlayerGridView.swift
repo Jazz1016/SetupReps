@@ -34,7 +34,7 @@ struct PlayerGridView: View {
             }
             
             if isPlayerDetailShown {
-                PlayerDetailView(selectedPlayer: selectedPlayer!)
+                PlayerDetailView(selectedPlayer: selectedPlayer!, isDetailShown: $isPlayerDetailShown)
             }
             
             

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PlayerDetailView: View {
     let selectedPlayer: Player
+    @Binding var isDetailShown: Bool
     
     var body: some View {
         VStack {
@@ -20,6 +21,6 @@ struct PlayerDetailView: View {
 
 struct PlayerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerDetailView(selectedPlayer: MockData.jazzPlayers.first!)
+        PlayerDetailView(selectedPlayer: MockData.jazzPlayers.first!, isDetailShown: .constant(true))
     }
 }
