@@ -11,11 +11,11 @@ struct PlayerGridView: View {
     @State var isPlayerDetailShown = false
     @State var selectedPlayer: Player?
     
-//    let gridColumns = [
-//            GridItem(.flexible()),
-//            GridItem(.flexible()),
-//            GridItem(.flexible())
-//        ]
+    let gridColumns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
     
     var body: some View {
         ZStack {
