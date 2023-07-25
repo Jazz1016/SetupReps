@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerDetailView: View {
     let selectedPlayer: Player
-    @Binding var isDetailShown: Bool
+//    @Binding var isDetailShown: Bool
     
     var body: some View {
         VStack {
