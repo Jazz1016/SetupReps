@@ -42,6 +42,7 @@ struct ContentView: View {
             textPerPage in
             if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines) {
                 let newScanData = ScanData(content: outputText)
+                print(newScanData)
                 self.texts.append(newScanData)
             }
             self.showScannerSheet = false
